@@ -1,0 +1,2 @@
+# StarStudded
+LighthouseLabs Final Project
