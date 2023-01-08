@@ -4,6 +4,7 @@ import Link from 'next/link';
 const Login = () => {
   return (
     <main>
+      <Link href="/" className='btn btn-primary btn-float'>Home</Link>
       <div className="card card-container">
         <h3 id="profile-name" className="profile-name-card py-4">Welcome Back to StarStudded</h3>
         <form className="d-flex justify-content-center align-items-center flex-column">

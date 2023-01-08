@@ -4,6 +4,7 @@ import Link from "next/link";
 const Register = () => {
   return (
     <main>
+      <Link href="/" className='btn btn-primary btn-float'>Home</Link>
       <div className="card card-container">
         <h3 id="profile-name" className="profile-name-card py-4">
           Create an Account

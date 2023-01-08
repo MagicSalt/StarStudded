@@ -35,3 +35,11 @@ main {
 .form-control {
   padding: 12px;
 }
+
+.btn-float {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 20px;
+  min-width: auto;
+}
