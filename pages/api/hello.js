@@ -1,5 +1,25 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+export default function Home({ results }) {
+  console.log(results);
+  return (
+    <div>
+      <h1> Render my page pls</h1>
+    </div>
+  );
+}
+
+export async function getServerSideProps() {
+  console.log("hello from server");
+
+  const res = await fetch(
+    "http://www.omdbapi.com/?i=tt3896198&apikey=" + process.env.REACT_APP_APIKEY
+  );
+  const data = await res.json();
+  console.log(data);
+  return {
+    props: {
+      results: data,
+    },
+  };
 }
